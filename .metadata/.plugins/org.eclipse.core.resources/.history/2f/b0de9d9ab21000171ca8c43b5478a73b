@@ -1,0 +1,63 @@
+package assignment1;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author Chenyu Yao (Dominic)
+ * @student_ID 40036290
+ * @date: Jan 24th, 2017
+ * @email dominicycy@gmail.com
+ * 
+ * @purpose:
+ * This program is to print a short story based on user's input. 
+ *
+ */
+public class Question2 {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("---------------------------");
+		System.out.println("Welcome to Dominic's program");
+		System.out.println("----------------------------\n\n");
+		
+		
+		//get user's inputs
+		System.out.print("Enter your name: ");
+		String name = keyboard.nextLine();
+		
+		System.out.print("Enter your age: ");
+		String age = keyboard.nextLine();
+		
+		System.out.print("Enter the name of a city: ");
+		String city = keyboard.nextLine();
+		
+		System.out.print("Enter the name of a college: ");
+		String college = keyboard.nextLine();
+		
+		System.out.print("Enter profession: ");
+		String profession = keyboard.nextLine();
+		
+		System.out.print("Enter a type of animal: ");		
+		String animal = keyboard.nextLine();
+	
+		System.out.print("Enter a pet name: ");
+		String pet_name = keyboard.nextLine();
+		
+		
+		//print out the story based on the input, use printf
+		System.out.printf("\nThere was once a person named %s who lived in %s."
+				         + " At the age of %s,\n%s went to college at %s. "
+				         + "%s graduated and went to work as a\n%s. Then, %s adopted a(n) %s named %s."
+				         + "They both lived\nhappily ever after.\n",
+				         name, city, age, name, college, name, profession, name, animal, pet_name );
+		
+		System.out.println("\nThank you for using Dominic's program - Bye!!!");
+		
+		
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package assignment2;
+
+import java.util.Scanner;
+/**
+ * 
+ * @author DominicYao
+ * @student_ID 40036290
+ * @date Feb 5th 2017
+ * @section WA winter 2017
+ * 
+ * @purpose: 
+ * The program prompts the user to enter a positive number of days (n) and displays the
+ * number of years contained in this number of days
+ *
+ */
+
+
+public class Question1 {
+	
+	public static final int DAYS_IN_YEAR = 365;
+
+	public static void main(String[] args) {
+		
+		System.out.println("------------------------------------");
+		System.out.println("    Welcome to Dominic's program    ");
+		System.out.println("------------------------------------");
+		System.out.println("Enter a positive number of days n : ");
+		
+		Scanner input = new Scanner(System.in);
+		int days = input.nextInt();	
+		input.close();
+		
+		int years = (days/DAYS_IN_YEAR > 0)? days/DAYS_IN_YEAR : 1;
+		
+        System.out.printf("")
+	}
+
+}

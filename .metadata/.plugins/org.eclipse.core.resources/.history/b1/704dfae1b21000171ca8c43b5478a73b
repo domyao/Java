@@ -1,0 +1,88 @@
+package assignment1.copy;
+
+
+/**
+ * 
+ * @author Chenyu Yao (Dominic)
+ * @student_ID 40036290
+ * @date: Jan 24th, 2017
+ * @email: dominicycy@gmail.com
+ * 
+ * @purpose: 
+ * 
+ * this program is to print the following pattern 
+ * 
+ *     *
+ *    ***
+ *   *****
+ *  *******
+ *   *****
+ *    ***
+ *     *
+ * 
+ * You can change the number of MAX_ROW, to get a pattern of different size.
+ *
+ */
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("---------------------------");
+		System.out.println("Welcome to Dominic's program");
+		System.out.println("----------------------------\n\n");
+		
+	    int row = 0, MAX_ROW = 3;
+	    
+	    //First part: ascending 
+	    while(row <= MAX_ROW){
+	    	
+	    	//By observing the mathematical relationship between number of space, number of stars each row and 
+	    	//the row number, MAX_ROW, get the following result:
+	    	int space = MAX_ROW - row; 
+	        int star = 1 + 2* row; 
+	        
+	    	printOneLine(space, star);
+	    	
+	    	row += 1;
+	    	
+	    	
+	    }
+	    
+	    //second part: descending 
+	    row = MAX_ROW - 1;
+	    
+	    while( row >= 0 ){
+	    	
+	    	int space = MAX_ROW - row;
+	    	int star = 1 + 2* row; 
+	    	
+	    	printOneLine(space, star);
+	    	
+	    	row -=1;
+	    	
+	    }
+	    
+	    System.out.println("\n\nThank you for using Dominic's program - Bye !!!");
+	    	   
+	}
+	
+	
+	// the method that print one line give the number of space and number of star to print. 
+	public static void printOneLine(int space, int star){
+		
+		while(space > 0){
+    		System.out.print(" ");
+    		space -=1;
+    	}
+    	
+    	while(star > 0){
+    		System.out.print("*");
+    		star -= 1;
+    	}
+    	
+    	System.out.println();
+		
+	}
+
+}
